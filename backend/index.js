@@ -7,6 +7,10 @@ app.get('/health', (req, res) => {
 
 app.get('/all', (req, res) => {
   res.send('Hello World! hello Arpit');
+});''
+
+app.get('/specific', (req, res) => {
+  res.send('Hello World! hello Arpit');
 });
 
 app.listen(3000, () => {
