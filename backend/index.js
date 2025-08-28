@@ -2,15 +2,15 @@ const express = require('express');
 const app = express();
 
 app.get('/health', (req, res) => {
-  res.send('Hello World!');
+  res.status(200).json({msg: 'Hello World!'});
 });
 
 app.get('/all', (req, res) => {
-  res.send('Hello World! hello Arpit');
+  res.status().json({msg : 'Hello World! hello Arpit'});
 });''
 
-app.get('/specific', (req, res) => {
-  res.send('Hello World! hello Arpit');
+app.get('/health2', (req,res) => {
+  res.status(200).json({msg: 'Hello World! hello Arpit health2'});
 });
 
 app.listen(3000, () => {
