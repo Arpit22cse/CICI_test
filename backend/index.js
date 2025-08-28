@@ -21,6 +21,7 @@ app.get('/health4', (req,res) => {
   res.status(200).json({msg: 'Hello World! hello Arpit health4'});
 });
 
-app.listen(3000, () => {
-  console.log('Server is running on port 3000');
+app.listen(3000, "0.0.0.0", () => {
+  console.log("Server running on port 3000");
 });
+
