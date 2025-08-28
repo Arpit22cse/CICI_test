@@ -7,10 +7,14 @@ app.get('/health', (req, res) => {
 
 app.get('/all', (req, res) => {
   res.status().json({msg : 'Hello World! hello Arpit'});
-});''
+});
 
 app.get('/health2', (req,res) => {
   res.status(200).json({msg: 'Hello World! hello Arpit health2'});
+});
+
+app.get('/health3', (req,res) => {
+  res.status(200).json({msg: 'Hello World! hello Arpit health3'});
 });
 
 app.listen(3000, () => {
